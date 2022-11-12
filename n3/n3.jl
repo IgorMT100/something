@@ -3,7 +3,7 @@ function field_in_markers(robot)
     go_corner(robot)
     putmarker!(robot)
     a = true
-    while a 
+    while a #Робот двигается по полю "змейкой" расставляя маркеры
         along_and_putmarker!(robot,Ost)
         if !isborder(robot,Nord)
             move!(robot,Nord)
