@@ -38,9 +38,3 @@ function go_home(robot,side1,side2,num_steps)#Робот возвращаетс�
 end
 
 inverse(side::HorizonSide)::HorizonSide = HorizonSide((Int(side)+2)%4)
-
-function main!(robot)
-    num_steps = steps_numsteps_putmarker(robot,Nord,Ost)
-    steps_numsteps_putmarker(robot,Nord,Ost)
-    go_home(robot,Nord,Ost,num_steps)
-end
